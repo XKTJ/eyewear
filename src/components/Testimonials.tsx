@@ -1,46 +1,47 @@
 import Image from 'next/image';
 import { Quote, Star } from 'lucide-react';
+import { publicPath } from '@/lib/paths';
 
 const testimonials = [
   {
     name: '李女士',
     role: '大学生',
-    avatar: '/images/avatar-li.jpg',
+    avatar: publicPath('/images/avatar-li.jpg'),
     rating: 5,
     text: '从小在这里配镜，验光师非常专业耐心。上次配了一副防蓝光镜片，长时间看电脑眼睛不再干涩了。',
   },
   {
     name: '张先生',
     role: '软件工程师',
-    avatar: '/images/avatar-zhang.jpg',
+    avatar: publicPath('/images/avatar-zhang.jpg'),
     rating: 5,
     text: '验光过程很细，旧眼镜参数也帮我一起复核。新镜戴上没有头晕，办公看屏幕舒服很多。',
   },
   {
     name: '王女士',
     role: '教师',
-    avatar: '/images/avatar-wang.jpg',
+    avatar: publicPath('/images/avatar-wang.jpg'),
     rating: 5,
     text: '试戴了好几副镜框，顾问根据脸型给了建议，最后选的钛合金框轻很多，同事都说好看。',
   },
   {
     name: '陈先生',
     role: '企业主管',
-    avatar: '/images/avatar-chen.jpg',
+    avatar: publicPath('/images/avatar-chen.jpg'),
     rating: 5,
     text: '上午预约下午就能取镜，效率很高。镜片清晰度确实比以前配的强，以后就认准这里。',
   },
   {
     name: '周女士',
     role: '设计师',
-    avatar: '/images/avatar-zhou.jpg',
+    avatar: publicPath('/images/avatar-zhou.jpg'),
     rating: 5,
     text: '做了全套眼部检查，发现有轻微干眼问题。感觉不只是配镜，更像一次眼部健康管理。',
   },
   {
     name: '刘先生',
     role: '公务员',
-    avatar: '/images/avatar-liu.jpg',
+    avatar: publicPath('/images/avatar-liu.jpg'),
     rating: 5,
     text: '环境整洁，工作人员态度好。验光过程专业，没有推销压力，已经推荐给家人朋友。',
   },

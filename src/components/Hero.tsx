@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { Clock, MapPin, Navigation, ShieldCheck, Star, Users } from 'lucide-react';
 import OfferCodeButton from './OfferCodeButton';
+import { publicPath } from '@/lib/paths';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-slate-950">
       <Image
-        src="/images/hero-optical-shop.png"
+        src={publicPath('/images/hero-optical-shop.png')}
         alt="亚洲用户佩戴眼镜形象"
         fill
         priority

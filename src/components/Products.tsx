@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ArrowRight, Tag } from 'lucide-react';
+import { publicPath } from '@/lib/paths';
 
 const products = [
   {
@@ -8,7 +9,7 @@ const products = [
     tagColor: 'bg-sky-700',
     price: '¥680 起',
     desc: '超轻钛合金材质，全天佩戴舒适无压，适合通勤、商务和日常高频佩戴。',
-    image: '/images/product-titanium.png',
+    image: publicPath('/images/product-titanium.png'),
     position: 'object-[50%_35%]',
   },
   {
@@ -17,7 +18,7 @@ const products = [
     tagColor: 'bg-sky-700',
     price: '¥480 起',
     desc: '醋酸板材手工质感，适合想提升气质、显脸小、拍照更出片的用户。',
-    image: '/images/product-acetate.png',
+    image: publicPath('/images/product-acetate.png'),
     position: 'object-[50%_28%]',
   },
   {
@@ -26,7 +27,7 @@ const products = [
     tagColor: 'bg-sky-700',
     price: '¥1,280 起',
     desc: '离焦镜片、视力档案和定期复查建议，帮助家长科学关注孩子近视增长。',
-    image: '/images/product-child.png',
+    image: publicPath('/images/product-child.png'),
     position: 'object-[50%_32%]',
   },
   {
@@ -35,7 +36,7 @@ const products = [
     tagColor: 'bg-sky-700',
     price: '¥1,580 起',
     desc: '蔡司、依视路等品牌镜片可选，适合清晰度、轻薄度和耐用性要求更高的人群。',
-    image: '/images/product-lenses.png',
+    image: publicPath('/images/product-lenses.png'),
     position: 'object-[50%_34%]',
   },
 ];
