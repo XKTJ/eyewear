@@ -55,7 +55,7 @@ export default function VisitReasons() {
               这些情况，建议先到店做一次专业验配
             </h2>
             <p className="mt-5 leading-relaxed text-slate-500">
-              线上看参数不如线下试戴和复核。我们把用户最常见的到店需求拆开，让客户更快找到自己的理由。
+              不确定该不该来店里？可以先看看这些常见情况。我们会按你的佩戴习惯和用眼需求，帮你把选择变得更清楚。
             </p>
 
             <div className="mt-7 rounded-lg border border-slate-200 bg-slate-50 p-5">
@@ -89,12 +89,14 @@ export default function VisitReasons() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             {reasons.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
-                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-sky-50 text-sky-700 ring-1 ring-sky-100">
+              <div key={title} className="flex gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-50 text-sky-700 ring-1 ring-sky-100">
                   <Icon size={22} />
                 </div>
-                <h3 className="text-lg font-black text-slate-950">{title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-500">{desc}</p>
+                <div className="min-w-0">
+                  <h3 className="text-base font-black leading-tight text-slate-950">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-500">{desc}</p>
+                </div>
               </div>
             ))}
           </div>

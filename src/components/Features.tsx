@@ -53,13 +53,15 @@ export default function Features() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="group rounded-lg border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group flex gap-4 rounded-lg border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-sky-50 text-sky-700 ring-1 ring-sky-100">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-sky-50 text-sky-700 ring-1 ring-sky-100">
                 <f.icon size={24} />
               </div>
-              <h3 className="mb-3 text-xl font-black text-slate-950">{f.title}</h3>
-              <p className="text-sm leading-relaxed text-slate-500">{f.desc}</p>
+              <div className="min-w-0">
+                <h3 className="text-lg font-black leading-tight text-slate-950">{f.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-500">{f.desc}</p>
+              </div>
             </div>
           ))}
         </div>
