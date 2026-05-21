@@ -68,7 +68,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-5 text-sm text-slate-200">
               <span className="inline-flex items-center gap-2">
                 <Users size={16} className="text-cyan-300" />
-                2 千+ 配镜服务客户
+                5 千+ 配镜服务客户
               </span>
               <span>4.9 分门店口碑</span>
               <span>普通镜片最快当天取</span>

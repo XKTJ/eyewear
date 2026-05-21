@@ -89,13 +89,13 @@ export default function VisitReasons() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             {reasons.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="flex gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-50 text-sky-700 ring-1 ring-sky-100">
+              <div key={title} className="flex gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm lg:block lg:p-6">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-50 text-sky-700 ring-1 ring-sky-100 lg:mb-5">
                   <Icon size={22} />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="text-base font-black leading-tight text-slate-950">{title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-500">{desc}</p>
+                  <h3 className="text-base font-black leading-tight text-slate-950 lg:text-lg">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-500 lg:mt-3">{desc}</p>
                 </div>
               </div>
             ))}

@@ -1,6 +1,6 @@
 const stats = [
   { value: '12', unit: '年', label: '专注视光行业' },
-  { value: '2', unit: '千+', label: '配镜服务客户' },
+  { value: '5', unit: '千+', label: '配镜服务客户' },
   { value: '50', unit: '+', label: '品牌镜片镜框' },
   { value: '98', unit: '%', label: '客户满意度' },
   { value: '8', unit: '位', label: '资深验光师' },
